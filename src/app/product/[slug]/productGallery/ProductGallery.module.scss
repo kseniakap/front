@@ -1,0 +1,13 @@
+.gallery {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+	gap: 5px;
+	
+	.smallImg {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		
+	}
+}

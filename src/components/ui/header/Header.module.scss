@@ -1,0 +1,28 @@
+.header {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	h5 {
+		padding: 20px 0;
+	}
+
+	.left {
+		display: flex;
+		align-items: center;
+		gap: 26px;
+		div {
+			a {
+				margin-right: 13px;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 600;
+			}
+		}
+	}
+	.right {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+}

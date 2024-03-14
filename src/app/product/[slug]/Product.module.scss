@@ -1,0 +1,29 @@
+.wrapper {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 200px;
+    .content{
+        margin-top: 30px;
+        width: 40%;
+        position: relative;
+        .favorite{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+.similar{
+    margin-bottom: 40px;
+}
+.review{
+    margin-bottom: 50px;
+}
+
+//SimilarProduct
+.wrapperSimilar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

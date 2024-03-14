@@ -1,0 +1,38 @@
+.menu {
+	background-color: var(--secondary-color);
+	border-radius: 3px;
+	height: calc(100vh);
+	width: auto;
+	padding: 50px 20px;
+	position: relative;
+
+	ul {
+		width: 210px;
+		display: flex;
+		flex-direction: column;
+		a {
+			display: block;
+			padding: 10px;
+			border-radius: 3px;
+			transition: 0.2s all ease-in;
+			span {
+				display: inline-block;
+				margin-left: 10px;
+			}
+			&:hover {
+				background-color: #fff;
+			}
+		}
+	}
+	.exit {
+		display: block;
+		width: 210px;
+		border-radius: 3px;
+		padding: 10px 20px;
+		background-color: #fff;
+		position: absolute;
+		bottom: 80px;
+		left: 20px;
+		font-weight: 600;
+	}
+}
