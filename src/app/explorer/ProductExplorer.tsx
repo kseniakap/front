@@ -46,7 +46,7 @@ const ProductExplorer:FC<IProductExplorer>= ({initialProducts}) => {
                     <Pagination
                     changePage={page=> updateQueryParams("page", page.toString())} 
                     currentPage={queryRapams.page} 
-                    numberPages={data.length / +queryRapams.perPage + 1}/>)
+                    numberPages={data.length /(queryRapams.perPage ? (+queryRapams.perPage + 1 ): 1)}/>)
                 }
            </div>
         </section>

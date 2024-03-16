@@ -13,6 +13,7 @@ export const ProductService = {
         })
         return data
     },
+
     
     async getSimilar(id: string | number){
         return axiosClassic<IProduct[]>({

@@ -3,10 +3,8 @@ import { ITextArea } from "./Textarea.interface";
 import cn from "clsx"
 import st from "./Textarea.module.scss"
 
-
-const Textarea = forwardRef<HTMLAreaElement, ITextArea>(
-    ({placeholder, error, className,
-    style, Icon, ...rest}, ref)=>{
+const Textarea = forwardRef<HTMLTextAreaElement, ITextArea>(
+    ({placeholder, error, className, style, Icon, ...rest}, ref) => {
         return (
             <div className={cn(st.area, className)} style={style}>
                 <label>
@@ -18,11 +16,10 @@ const Textarea = forwardRef<HTMLAreaElement, ITextArea>(
                     <textarea ref={ref} {...rest}/>
                 </label>
                 {error && <div className="">{error}</div>}
-
             </div>
         )
     }
 )
 
-Textarea.displayName ="Field"
+Textarea.displayName = "Field"
 export default Textarea
